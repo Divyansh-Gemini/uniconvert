@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --off-black: #171717;
+  --snowy-day: #e9e5de;
+  --midnight-blue: #092d35;
+  --noon-yellow: #ffdf00;
+  --clear-blue-sky: #bbe0f3;
+}
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+.header {
+  @apply flex justify-between items-center px-10 lg:px-32 py-4 bg-midnight_blue text-snowy_day;
+}
+
+.responsive-bg {
+  @apply bg-red-700 sm:bg-orange-600 md:bg-yellow-600 lg:bg-green-600 xl:bg-blue-600 2xl:bg-purple-600;
+}
+
+.footer {
+  @apply flex justify-center items-center py-4 bg-gradient-to-r from-noon_yellow to-clear_blue_sky filter grayscale-[50%];
+}
+
+.dropdown {
+  @apply bg-snowy_day text-midnight_blue rounded-lg px-4 py-2 cursor-pointer;
+}
+
+.textarea {
+  @apply flex-1 w-full resize-none bg-white dark:bg-off_black dark:text-snowy_day p-5;
+}
+
+.uniconverter-parent {
+  @apply flex max-md:flex-col gap-5 md:gap-1 h-[70vh] w-full;
+}
+
+.uniconverter-child {
+  @apply flex flex-col h-full w-full md:w-1/2;
+}
+
+.uniconverter-header {
+  @apply flex justify-between items-center bg-midnight_blue text-snowy_day px-5 py-2 max-md:rounded-t-3xl;
+}

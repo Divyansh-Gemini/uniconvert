@@ -2,16 +2,17 @@
 
 ## Description
 
-TODO
+Web app to convert Tamil & Telugu text from one font to another.
 
 ## Tech Stack
 
-- Next
+- Next.js
 - TailwindCSS
+- Redux
 
 <p align="center">
     <a href="https://www.divyanshgemini.dev/">
-        <img src="https://skillicons.dev/icons?i=nextjs,tailwind" alt="tech stack" />
+        <img src="https://skillicons.dev/icons?i=nextjs,tailwind,ts,redux" alt="tech stack" />
     </a>
 </p>
 

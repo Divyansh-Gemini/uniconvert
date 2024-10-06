@@ -12,8 +12,8 @@ const NotFound: React.FC = async () => {
     <>
       <Header />
 
-      <main className="flex flex-col items-center justify-center min-h-screen">
-        <h1 className="text-4xl font-bold">Page Not Found</h1>
+      <main className="flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold">404: Page Not Found</h1>
       </main>
     </>
   );

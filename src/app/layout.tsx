@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import "../styles/globals.css";
+import { ReduxProvider } from "@/store/provider";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -40,7 +41,7 @@ const RootLayout: React.FC<LayoutProps> = ({ children }) => {
       <body
         className={`${archivo.className} bg-snowy_day text-midnight_blue dark:bg-black`}
       >
-        {children}
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );

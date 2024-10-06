@@ -7,7 +7,7 @@ export const copyToClipboard = (text: string): void => {
     () => {
       toast.success("Text copied to clipboard");
     },
-    (err: any) => {
+    (err: unknown) => {
       toast.error("Could not copy text");
       console.error("Could not copy text: ", err);
     }

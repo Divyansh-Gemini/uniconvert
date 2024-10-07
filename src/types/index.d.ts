@@ -19,8 +19,9 @@ interface TextareaProps {
   id: string;
   value: string;
   placeholder: string;
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
   className?: string;
+  disabled?: boolean;
 }
 
 // ---------------------------------------- Data types ----------------------------------------

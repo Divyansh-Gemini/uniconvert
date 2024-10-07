@@ -4,8 +4,9 @@ const Textarea: React.FC<TextareaProps> = ({
   id,
   value,
   placeholder,
-  onChange,
+  onChange = () => {},
   className = "",
+  disabled = false,
 }) => {
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     onChange(event.target.value);
@@ -18,6 +19,7 @@ const Textarea: React.FC<TextareaProps> = ({
       placeholder={placeholder}
       value={value}
       onChange={handleChange}
+      disabled={disabled}
     />
   );
 };

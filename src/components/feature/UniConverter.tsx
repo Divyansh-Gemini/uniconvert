@@ -14,6 +14,7 @@ import Textarea from "@/components/form-fields/Textarea";
 import Icon from "@mdi/react";
 import { mdiContentCopy } from "@mdi/js";
 import { convertText, copyToClipboard } from "@/utils/helper";
+import { FONT_TYPE_UNICODE } from "@/utils/Constants";
 
 const UniConverter: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -51,7 +52,11 @@ const UniConverter: React.FC = () => {
         <div className="uniconverter-header md:rounded-tl-3xl">
           {/* Font-1 Dropdown */}
           <Dropdown
-            options={filteredFonts.map((font) => font.name)}
+            options={filteredFonts.map(
+              (font) =>
+                `${font.type === FONT_TYPE_UNICODE ? "❇️" : "⛔"} ${font.name}`
+            )}
+            values={filteredFonts.map((font) => font.name)}
             selectedValue={font1}
             onChange={handleFontChange(setFont1)}
             name="converter-language"
@@ -71,7 +76,7 @@ const UniConverter: React.FC = () => {
         <Textarea
           id="textarea-1"
           className="max-md:rounded-b-3xl md:rounded-bl-3xl"
-          placeholder="Enter text here"
+          placeholder="Enter text here..."
           value={text1}
           onChange={handleText1Change}
         />
@@ -83,7 +88,11 @@ const UniConverter: React.FC = () => {
         <div className="uniconverter-header md:rounded-tr-3xl ">
           {/* Font-2 Dropdown */}
           <Dropdown
-            options={filteredFonts.map((font) => font.name)}
+            options={filteredFonts.map(
+              (font) =>
+                `${font.type === FONT_TYPE_UNICODE ? "❇️" : "⛔"} ${font.name}`
+            )}
+            values={filteredFonts.map((font) => font.name)}
             selectedValue={font2}
             onChange={handleFontChange(setFont2)}
             name="converter-language"

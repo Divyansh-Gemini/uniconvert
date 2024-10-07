@@ -11,10 +11,23 @@ Web app to convert Tamil & Telugu text from one font to another.
 - Redux
 
 <p align="center">
-    <a href="https://www.divyanshgemini.dev/">
+    <a href="https://uni-convert.vercel.app/">
         <img src="https://skillicons.dev/icons?i=nextjs,tailwind,ts,redux" alt="tech stack" />
     </a>
 </p>
+
+## Developer Setup
+
+1. Install [Node.js](https://nodejs.org/en/download/prebuilt-installer/)
+2. Install [Git](https://git-scm.com/downloads)
+3. Install [VS Code](https://code.visualstudio.com/download)
+
+## Useful VS Code Extensions
+
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
 
 ## Installation Steps
 
@@ -42,4 +55,4 @@ Web app to convert Tamil & Telugu text from one font to another.
    npm run dev
    ```
 
-5. Open http://localhost:3000 with your browser to see the result.
+5. Open http://localhost:3000 in your browser to see the result.

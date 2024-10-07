@@ -35,12 +35,6 @@ const UniConverter: React.FC = () => {
     dispatch(setText2(convertText(font1, font2, value)));
   };
 
-  // set text2 in store
-  const handleText2Change = (value: string) => {
-    dispatch(setText2(value));
-    dispatch(setText1(convertText(font2, font1, value)));
-  };
-
   // update font1 & font2 when filteredFonts changes
   useEffect(() => {
     if (filteredFonts.length > 0) {
@@ -111,7 +105,7 @@ const UniConverter: React.FC = () => {
           className="max-md:rounded-b-3xl md:rounded-br-3xl"
           placeholder="Converted text will appear here"
           value={text2}
-          onChange={handleText2Change}
+          disabled
         />
       </div>
     </div>

@@ -7,6 +7,7 @@ interface LayoutProps {
 // Dropdown
 interface DropdownProps<T> {
   options: T[];
+  values: T[];
   selectedValue: T;
   onChange: (value: T) => void;
   className?: string;

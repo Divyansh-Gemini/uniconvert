@@ -23,6 +23,7 @@ const LanguageSelector: React.FC = () => {
   return (
     <Dropdown
       options={fontLanguages}
+      values={fontLanguages}
       selectedValue={language}
       onChange={handleLanguageChange}
       name="converter-language"

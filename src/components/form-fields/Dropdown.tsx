@@ -5,6 +5,7 @@ import { toTitleCase } from "@/utils/Formatter";
 
 const Dropdown = <T extends string | number>({
   options,
+  values,
   selectedValue,
   onChange,
   className = "",
@@ -24,7 +25,7 @@ const Dropdown = <T extends string | number>({
       onChange={handleChange}
     >
       {options.map((option, index) => (
-        <option key={index} value={option}>
+        <option key={index} value={values[index]}>
           {toTitleCase(option.toString())}
         </option>
       ))}

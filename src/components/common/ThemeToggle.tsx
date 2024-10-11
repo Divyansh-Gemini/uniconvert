@@ -33,7 +33,13 @@ const ThemeToggle: React.FC = () => {
 
   return (
     <div onClick={handleThemeToggle} className="cursor-pointer">
-      <Icon path={mdiBrightness6} title="Theme" size={1} color="#e9e5de" />
+      <Icon
+        id="theme-icon"
+        path={mdiBrightness6}
+        title="Theme"
+        size={1}
+        color="#e9e5de"
+      />
     </div>
   );
 };

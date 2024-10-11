@@ -43,5 +43,9 @@
 }
 
 .uniconverter-header {
-  @apply flex justify-between items-center bg-midnight_blue text-snowy_day px-5 py-2 max-md:rounded-t-3xl;
+  @apply flex max-md:justify-between items-center gap-3 bg-midnight_blue text-snowy_day px-5 py-2 max-md:rounded-t-3xl;
+}
+
+.swap-btn {
+  @apply max-md:mx-auto md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:mt-[0.175rem] max-md:rotate-90 bg-midnight_blue dark:bg-snowy_day md:bg-snowy_day rounded-full cursor-pointer;
 }

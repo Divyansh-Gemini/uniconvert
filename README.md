@@ -1,4 +1,4 @@
-# UniConvert
+# uniConvert
 
 ## Description
 
@@ -7,14 +7,22 @@ Web app to convert Tamil & Telugu text from one font to another.
 ## Tech Stack
 
 - Next.js
+- TypeScript
 - TailwindCSS
 - Redux
 
 <p align="center">
-    <a href="https://uni-convert.vercel.app/">
+    <a href="https://uniconvert.vercel.app/">
         <img src="https://skillicons.dev/icons?i=nextjs,tailwind,ts,redux" alt="tech stack" />
     </a>
 </p>
+
+## Features
+
+- Convert Tamil & Telugu text from one (unicode / non-unicode) font to another.
+- Copy text to clipboard.
+- Responsive design
+- Dark mode support
 
 ## Developer Setup
 
@@ -56,3 +64,7 @@ Web app to convert Tamil & Telugu text from one font to another.
    ```
 
 5. Open http://localhost:3000 in your browser to see the result.
+
+## Git commit convention
+
+https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13

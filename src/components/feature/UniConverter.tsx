@@ -12,11 +12,7 @@ import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { useEffect } from "react";
 import Textarea from "@/components/form-fields/Textarea";
 import Icon from "@mdi/react";
-import {
-  mdiContentCopy,
-  mdiSwapHorizontalCircleOutline,
-  mdiSwapVerticalCircleOutline,
-} from "@mdi/js";
+import { mdiContentCopy, mdiSwapHorizontalCircleOutline } from "@mdi/js";
 import { convertText, copyToClipboard } from "@/utils/helper";
 import { FONT_TYPE_UNICODE } from "@/utils/Constants";
 

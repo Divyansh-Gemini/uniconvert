@@ -12,7 +12,11 @@ import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { useEffect } from "react";
 import Textarea from "@/components/form-fields/Textarea";
 import Icon from "@mdi/react";
-import { mdiContentCopy } from "@mdi/js";
+import {
+  mdiContentCopy,
+  mdiSwapHorizontalCircleOutline,
+  mdiSwapVerticalCircleOutline,
+} from "@mdi/js";
 import { convertText, copyToClipboard } from "@/utils/helper";
 import { FONT_TYPE_UNICODE } from "@/utils/Constants";
 
@@ -34,6 +38,16 @@ const UniConverter: React.FC = () => {
   const handleText1Change = (value: string) => {
     dispatch(setText1(value));
     dispatch(setText2(convertText(font1, font2, value)));
+  };
+
+  /// swap fonts & texts
+  const handleSwap = () => {
+    dispatch(setFont1(font2));
+    dispatch(setFont2(font1));
+    dispatch(setText1(text2));
+    dispatch(setText2(text1));
+
+    // TODO: Convert text from font1 to font2
   };
 
   // update font1 & font2 when filteredFonts changes
@@ -82,10 +96,19 @@ const UniConverter: React.FC = () => {
         />
       </div>
 
+      {/* Swap btn */}
+      <div className="swap-btn" onClick={handleSwap}>
+        <Icon
+          path={mdiSwapHorizontalCircleOutline}
+          size={1.9}
+          className="text-snowy_day dark:text-midnight_blue md:text-midnight_blue"
+        />
+      </div>
+
       {/* Right */}
       <div className="uniconverter-child">
         {/* Header */}
-        <div className="uniconverter-header md:rounded-tr-3xl ">
+        <div className="uniconverter-header md:flex-row-reverse md:rounded-tr-3xl ">
           {/* Font-2 Dropdown */}
           <Dropdown
             options={filteredFonts.map(

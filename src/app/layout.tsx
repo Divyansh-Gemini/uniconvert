@@ -12,7 +12,7 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "uniConvert",
   description:
-    "A tool for converting between various Unicode and non-Unicode fonts.",
+    "A tool for converting text between various Unicode and non-Unicode fonts.",
   keywords: [
     "uniconvert",
     "unicode converter",
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  manifest: "manifest.ts",
 };
 
 const RootLayout: React.FC<LayoutProps> = ({ children }) => {
